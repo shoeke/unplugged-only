@@ -104,6 +104,7 @@ textarea {
   color: #fff;
 }
 
+
 /* - - - - - - - SHARED HEADER/FOOTER STYLES - - - - - - - - - */
 
 header,
@@ -178,18 +179,24 @@ main h1{
 
 aside{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
   padding: 25px 20px 50px 20px;
+  background-color: var(--color-bg-light);
 }
-
+aside .content-wrapper{
+  display: flex;
+  justify-content: flex-start;
+}
 .form-description{
 
 }
 
 form{
-
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 }
 .features{
   display: flex;
@@ -200,6 +207,9 @@ form{
 }
 
 .features .content-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
   width: 83%;
   padding: 50px 0;
 }
@@ -215,15 +225,26 @@ form{
   text-align: center;
 }
 .reviews{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+
   background-color: var(--color-bg-dark);
   color: #fff;
-  padding: 25px;
+  /*padding: 25px;*/
+}
+.reviews .content-wrapper{
+  padding: 30px;
+
+}
+
+.reviews img {
+  max-width: 100%;
+  height: auto;
+}
+.reviews h2 {
+  margin-bottom: 40px;
 }
 .reviews h3 {
-  width: 50%;
+  width: 55%;
+  margin: 20px 0;
 }
 
 .lacrue-section{
@@ -425,8 +446,46 @@ align-items: center;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+    /* Tablets */
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
+    aside .form-description, aside form {
+      width: 38%;
+    }
+    .features .content-wrapper{
+      justify-content: space-around;
+    }
+    .feature-items{
+      width: 23%;
+    }
+    .reviews img {
+      width: 40%;
+    }
+    .reviews article{
+      display: flex;
+      justify-content: space-between;
+    }
+    .reviews article div {
+      width: 49%;
+    }
+    /*.lacrue-section, .lacrue-text{
+      width: 40%;
+      height: 250px;
+      border: 2px solid white;
+    }*/
+    .lacrue-section {
+      background-image: url("../img/laCrue-team.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Desktop */
 }
 
 @media print,
