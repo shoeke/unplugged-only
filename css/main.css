@@ -101,6 +101,7 @@ textarea {
 :root {
   --color-bg-dark:#2a423a;
   --color-bg-light: #527158;
+  --color-bg-almostBlack: #202322;
   color: #fff;
 }
 
@@ -113,6 +114,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: var(--color-bg-almostBlack);
 }
 .content-wrapper{
   display: flex;
@@ -129,7 +131,6 @@ header .content-wrapper{
 justify-content: center;
 align-items: center;
 flex-flow: row wrap;*/
-background-color: #000000;
 width: 100%;
 margin: 0;
 padding: 15px 0;
@@ -306,7 +307,6 @@ padding: 30px 20px;
 }
 /* - - - - - - - FOOTER STYLES - - - - - - - - - */
 footer {
-  background-color: var(--color-bg-dark);
   color: #fff;
 
 }
@@ -461,17 +461,17 @@ align-items: center;
       width: 23%;
     }
     .lacrue-section {
-      width: 40%;
+      width: 48%;
       margin-right: 20px;
 
     }
 
   .reviews .content-wrapper {
-    padding: 60px 40px;
+    padding: 40px 60px;
     justify-content: flex-start;
   }
   .reviews article {
-    width: 40%;
+    width: 48%;
   }
 .reviews h2 {
   width: 100%;
