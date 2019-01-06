@@ -1,0 +1,20 @@
+<svg id="Wifi" xmlns="http://www.w3.org/2000/svg" width="194" height="134" viewBox="0 0 194 134">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 14px;
+        fill: #e1e2ea;
+        text-anchor: middle;
+        font-family: "Open Sans";
+      }
+
+      .cls-2 {
+        font-size: 60px;
+        fill: #e2e3ed;
+        font-family: FontAwesome5FreeSolid;
+      }
+    </style>
+  </defs>
+  <text id="Dedicated_computer_room_for_times_that_you_must_wifi." data-name="Dedicated computer room for times that you must wifi." class="cls-1" x="-3.56" y="101.192">Dedicated computer room for times that you must wifi.</text>
+  <text id="wifi-2" data-name="wifi" class="cls-2" x="58.193" y="-2.058"></text>
+</svg>
