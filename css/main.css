@@ -460,26 +460,25 @@ align-items: center;
     .feature-items{
       width: 23%;
     }
-    .reviews img {
-      width: 40%;
-    }
-    .reviews article{
-      display: flex;
-      justify-content: space-between;
-    }
-    .reviews article div {
-      width: 49%;
-    }
-    /*.lacrue-section, .lacrue-text{
-      width: 40%;
-      height: 250px;
-      border: 2px solid white;
-    }*/
     .lacrue-section {
-      background-image: url("../img/laCrue-team.jpg");
-      background-size: contain;
-      background-repeat: no-repeat;
+      width: 40%;
+      margin-right: 20px;
+
     }
+
+  .reviews .content-wrapper {
+    padding: 60px 40px;
+    justify-content: flex-start;
+  }
+  .reviews article {
+    width: 40%;
+  }
+.reviews h2 {
+  width: 100%;
+}
+.reviews h3 {
+  margin-top: 0;
+}
 
 
 }
