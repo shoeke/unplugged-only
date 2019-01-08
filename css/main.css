@@ -152,9 +152,14 @@ header nav ul {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  list-style-type: none;
 }
 header nav ul li {
-  border: 1px solid #fff;
+
+}
+header li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* - - - - - - - MAIN STYLES HOMEPAGE- - - - - - - - - */
@@ -448,6 +453,22 @@ align-items: center;
 
 @media only screen and (min-width: 768px) {
     /* Tablets */
+
+/* =  =  =  =  =  HEADER  =  =  =  =  =  */
+header .content-wrapper {
+padding: 15px 56px;
+}
+header nav {
+  width: 30%;
+}
+.header-divider{
+  width: 40%;
+}
+header a {
+  width: 30%;
+}
+/* =  =  =  =  =  MAIN  =  =  =  =  =  */
+
     aside .content-wrapper {
       justify-content: space-around;
     }
