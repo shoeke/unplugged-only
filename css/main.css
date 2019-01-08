@@ -524,12 +524,27 @@ header a {
   padding: 0;
 
 }
+
 .contact-section .content-wrapper h2{
   width: 100%;
 }
 .gen-info, .chat {
   width: 45%;
 }
+/* =  =  =  =  =  FAQ PAGE  =  =  =  =  =  */
+.faq .content-wrapper{
+  padding: 30px 60px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.faq h2 {
+  width: 100%;
+}
+.faq-content {
+  width: 45%;
+}
+
 /* =  =  =  =  =  FOOTER  =  =  =  =  =  */
 footer .content-wrapper{
   width: 100%;
