@@ -501,6 +501,21 @@ header a {
   margin-top: 0;
 }
 
+/* =  =  =  =  =  FOOTER  =  =  =  =  =  */
+footer .content-wrapper{
+  width: 100%;
+}
+.footer-content{
+  flex-flow: row wrap;
+}
+.contact, .social {
+  width: 45%;
+}
+.social-icons{
+  width: 50%;
+}
+
+
 
 }
 
