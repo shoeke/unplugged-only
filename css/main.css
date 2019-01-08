@@ -500,7 +500,36 @@ header a {
 .reviews h3 {
   margin-top: 0;
 }
+/* =  =  =  =  =  ABOUT PAGE  =  =  =  =  =  */
+.mission .content-wrapper{
+  padding: 30px 60px;
+}
 
+.mission-content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.mission-content p {
+  width: 45%;
+}
+.contact-section .content-wrapper{
+  padding: 30px 60px;
+}
+.contact-section .contact-content{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0;
+
+}
+.contact-section .content-wrapper h2{
+  width: 100%;
+}
+.gen-info, .chat {
+  width: 45%;
+}
 /* =  =  =  =  =  FOOTER  =  =  =  =  =  */
 footer .content-wrapper{
   width: 100%;
