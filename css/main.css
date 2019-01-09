@@ -120,7 +120,6 @@ ol {
   font-weight: 700;
   text-transform: uppercase;
   font-size: .875em;
-
 }
 a{
   text-decoration: none;
@@ -612,15 +611,6 @@ align-items: center;
       header .content-wrapper {
         padding: 25px 70px;
       }
-    /* header nav {
-        width: 30%;
-      }
-      .header-divider{
-        width: 40%;
-      }
-      header a {
-        width: 30%;
-      }*/
 
     /* + + + + + + ++  MAIN  + + + + + + ++  */
 
@@ -657,7 +647,7 @@ align-items: center;
         width: 100%;
         margin-bottom: 60px;
       }
-    }
+
     /* + + + + + + ++  ABOUT  + + + + + + ++  */
 
       .mission .content-wrapper{
@@ -674,7 +664,7 @@ align-items: center;
 
       .faq .content-wrapper{
         padding: 40px 120px;
-
+      }
       /* + + + + + +  FOOTER  + + + + + +  */
         footer .content-wrapper{
           width: 100%;
