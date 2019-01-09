@@ -13,7 +13,6 @@
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
 }
 
 /*
@@ -102,10 +101,66 @@ textarea {
   --color-bg-dark:#2a423a;
   --color-bg-light: #527158;
   --color-bg-almostBlack: #202322;
-  color: #fff;
+  --color-text-almostWhite: #e2e3ed;
+  --font-family-main: "Open Sans", sans-serif;
+  --font-family-alternate: "Poppins", sans-serif;
 }
+/* - - - - - - - GENERAL STYLES - - - - - - - - - */
+html{
+  font-size: 16px;
+}
+body{
+  font-family: var(--font-family-main);
+  font-size: 1em;
+  color: var(--color-text-almostWhite);
+}
+ul,
+ol {
+  list-style-type: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: .875em;
 
+}
+a{
+  text-decoration: none;
+  color: var(--color-text-almostWhite);
+}
+h1{
+  font-family: var(--font-family-alternate);
+  font-size: 2.25em;
+  font-weight: 500;
+  line-height: 1.35em;
+}
+h2{
+  font-family: var(--font-family-alternate);
+  font-weight: 500;
+  font-size: 1.8em;
+  line-height: 1.15em;
 
+}
+h3,
+h4{
+  font-family: var(--font-family-alternate);
+  font-weight: 500;
+  font-size: 1.1em;
+}
+p {
+font-size: .875em;
+}
+img {
+
+}
+figure{
+font-size: .75em;
+}
+address{
+  font-style: normal;
+
+}
+.content-wrapper{
+
+}
 /* - - - - - - - SHARED HEADER/FOOTER STYLES - - - - - - - - - */
 
 header,
@@ -152,20 +207,15 @@ header nav ul {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  list-style-type: none;
 }
 header nav ul li {
 
 }
-header li a {
-  color: #fff;
-  text-decoration: none;
-}
+
 
 /* - - - - - - - MAIN STYLES HOMEPAGE- - - - - - - - - */
 
 main h1{
-  width: 90%;
   color: #fff;
 }
 .hero-area {
@@ -179,7 +229,7 @@ main h1{
   background-size: cover;
   min-height: 500px;
   width: 100%;
-  padding: 24px;
+  padding: 20px;
 }
 
 
@@ -224,7 +274,7 @@ align-items: flex-start;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 56%;
+  width: 54%;
 }
 
 .feature-items figcaption {
@@ -249,7 +299,7 @@ align-items: flex-start;
   margin-bottom: 40px;
 }
 .reviews h3 {
-  width: 55%;
+  width: 60%;
   margin: 20px 0;
 }
 
@@ -624,7 +674,7 @@ align-items: center;
 
       .faq .content-wrapper{
         padding: 40px 120px;
-    
+
       /* + + + + + +  FOOTER  + + + + + +  */
         footer .content-wrapper{
           width: 100%;
