@@ -188,12 +188,12 @@ aside{
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
-  padding: 25px 20px 50px 20px;
   background-color: var(--color-bg-light);
 }
 aside .content-wrapper{
   display: flex;
   justify-content: flex-start;
+  padding: 25px 20px 50px 20px;
 }
 .form-description{
 
@@ -455,38 +455,38 @@ align-items: center;
     /* Tablets */
 
 /* =  =  =  =  =  HEADER  =  =  =  =  =  */
-header .content-wrapper {
-padding: 15px 56px;
-}
-header nav {
-  width: 30%;
-}
-.header-divider{
-  width: 40%;
-}
-header a {
-  width: 30%;
-}
+  header .content-wrapper {
+    padding: 15px 56px;
+  }
+  header nav {
+    width: 30%;
+  }
+  .header-divider{
+    width: 40%;
+  }
+  header a {
+    width: 30%;
+  }
 /* =  =  =  =  =  MAIN  =  =  =  =  =  */
 
-    aside .content-wrapper {
-      justify-content: space-around;
-    }
-    aside .form-description, aside form {
-      width: 38%;
-    }
-    .features .content-wrapper{
-      justify-content: space-around;
-    }
-    .feature-items{
-      width: 23%;
-    }
-    .lacrue-section {
-      width: 48%;
-      margin-right: 20px;
-
-    }
-
+  aside .content-wrapper {
+    padding: ;
+    justify-content: space-around;
+  }
+  aside .form-description, aside form {
+    width: 38%;
+  }
+  .features .content-wrapper{
+    padding: ;
+    justify-content: space-around;
+  }
+  .feature-items{
+    width: 23%;
+  }
+  .lacrue-section {
+    width: 48%;
+    margin-right: 20px;
+  }
   .reviews .content-wrapper {
     padding: 40px 60px;
     justify-content: flex-start;
@@ -494,77 +494,142 @@ header a {
   .reviews article {
     width: 48%;
   }
-.reviews h2 {
-  width: 100%;
-}
-.reviews h3 {
-  margin-top: 0;
+  .reviews h2 {
+    width: 100%;
+  }
+  .reviews h3 {
+    margin-top: 0;
 }
 /* =  =  =  =  =  ABOUT PAGE  =  =  =  =  =  */
-.mission .content-wrapper{
-  padding: 30px 60px;
-}
-
-.mission-content{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.mission-content p {
-  width: 45%;
-}
-.contact-section .content-wrapper{
-  padding: 30px 60px;
-}
-.contact-section .contact-content{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0;
-
-}
-
-.contact-section .content-wrapper h2{
-  width: 100%;
-}
-.gen-info, .chat {
-  width: 45%;
-}
+  .mission .content-wrapper{
+    padding: 30px 60px;
+  }
+  .mission-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .mission-content p {
+    width: 45%;
+  }
+  .contact-section .content-wrapper{
+    padding: 30px 60px;
+  }
+  .contact-section .contact-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .contact-section .content-wrapper h2{
+    width: 100%;
+  }
+  .gen-info, .chat {
+    width: 45%;
+  }
 /* =  =  =  =  =  FAQ PAGE  =  =  =  =  =  */
-.faq .content-wrapper{
-  padding: 30px 60px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.faq h2 {
-  width: 100%;
-}
-.faq-content {
-  width: 45%;
-}
+  .faq .content-wrapper{
+    padding: 30px 60px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .faq h2 {
+    width: 100%;
+  }
+  .faq-content {
+    width: 45%;
+  }
 
 /* =  =  =  =  =  FOOTER  =  =  =  =  =  */
-footer .content-wrapper{
-  width: 100%;
-}
-.footer-content{
-  flex-flow: row wrap;
-}
-.contact, .social {
-  width: 45%;
-}
-.social-icons{
-  width: 50%;
-}
-
-
-
+  footer .content-wrapper{
+    width: 100%;
+  }
+  .footer-content{
+    flex-flow: row wrap;
+  }
+  .contact, .social {
+    width: 45%;
+  }
+  .social-icons{
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
     /* Desktop */
+
+    /* + + + + + +  HEADER  + + + + + +   */
+      header .content-wrapper {
+        padding: 25px 70px;
+      }
+    /* header nav {
+        width: 30%;
+      }
+      .header-divider{
+        width: 40%;
+      }
+      header a {
+        width: 30%;
+      }*/
+
+    /* + + + + + + ++  MAIN  + + + + + + ++  */
+
+      aside .content-wrapper {
+        width: 100%;
+        justify-content: space-between;
+        padding: 40px 140px;
+      }
+      aside .form-description, aside form {
+        width: 45%;
+      }
+      .features .content-wrapper{
+        padding: 100px 120px;
+      }
+
+      .features h2{
+        width: 100%;
+        margin-bottom: 70px;
+      }
+      .feature-items{
+        width: 17%;
+      }
+      .lacrue-section {
+        width: 48%;
+        margin-right: 30px;
+      }
+      .reviews .content-wrapper {
+        padding: 40px 120px 70px 120px;
+      }
+      .reviews article {
+        width: 48%;
+      }
+      .reviews h2 {
+        width: 100%;
+        margin-bottom: 60px;
+      }
+    }
+    /* + + + + + + ++  ABOUT  + + + + + + ++  */
+
+      .mission .content-wrapper{
+        justify-content: flex-start;
+        padding: 50px 120px;
+      }
+
+      .contact-section .content-wrapper{
+        width: 100%;
+        padding: 40px 120px;
+      }
+
+      /* + + + + + + + +  FAQ  + + + + + + + +  */
+
+      .faq .content-wrapper{
+        padding: 40px 120px;
+    
+      /* + + + + + +  FOOTER  + + + + + +  */
+        footer .content-wrapper{
+          width: 100%;
+          padding: 40px 0px;
+        }
 }
 
 @media print,
