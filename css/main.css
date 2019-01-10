@@ -127,7 +127,7 @@ a{
 }
 h1{
   font-family: var(--font-family-alternate);
-  font-size: 2.25em;
+  font-size: 2.5em;
   font-weight: 500;
   line-height: 1.35em;
 }
@@ -143,13 +143,16 @@ h4{
   font-family: var(--font-family-alternate);
   font-weight: 500;
   font-size: 1.1em;
+  margin-top: 0;
 }
 p {
 font-size: .875em;
+line-height: 1.25em;
 }
 img {
 
 }
+
 figure{
 font-size: .75em;
 }
@@ -174,6 +177,7 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  max-width: 320px;
 }
 /* - - - - - - - HEADER STYLES - - - - - - - - - */
 header {
@@ -234,7 +238,7 @@ main h1{
 
 aside{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
   background-color: var(--color-bg-light);
@@ -243,6 +247,7 @@ aside .content-wrapper{
   display: flex;
   justify-content: flex-start;
   padding: 25px 20px 50px 20px;
+
 }
 .form-description{
 
@@ -252,6 +257,31 @@ form{
 display: flex;
 flex-direction: column;
 align-items: flex-start;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: var(--color-text-almostWhite);
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: var(--color-bg-dark);
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: var(--color-text-almostWhite);
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 .features{
   display: flex;
@@ -280,7 +310,8 @@ align-items: flex-start;
   text-align: center;
 }
 .reviews{
-
+  display: flex;
+  justify-content: center;
   background-color: var(--color-bg-dark);
   color: #fff;
   /*padding: 25px;*/
@@ -503,6 +534,16 @@ align-items: center;
 @media only screen and (min-width: 768px) {
     /* Tablets */
 
+html {
+  font-size: 18px;
+}
+.content-wrapper {
+  max-width: 680px;
+}
+h2{
+  font-size: 2em;
+  line-height: 1.35em;
+}
 /* =  =  =  =  =  HEADER  =  =  =  =  =  */
   header .content-wrapper {
     padding: 15px 56px;
@@ -517,10 +558,15 @@ align-items: center;
     width: 30%;
   }
 /* =  =  =  =  =  MAIN  =  =  =  =  =  */
-
+  .hero-area .content-wrapper {
+    padding: 60px;
+  }
   aside .content-wrapper {
-    padding: ;
+    padding:50px ;
     justify-content: space-around;
+  }
+  aside .form {
+    margin-top: 0px;
   }
   aside .form-description, aside form {
     width: 38%;
@@ -607,6 +653,9 @@ align-items: center;
 @media only screen and (min-width: 1200px) {
     /* Desktop */
 
+    .content-wrapper{
+      max-width: 980px;
+    }
     /* + + + + + +  HEADER  + + + + + +   */
       header .content-wrapper {
         padding: 25px 70px;
