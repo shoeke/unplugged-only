@@ -120,6 +120,7 @@ ol {
   font-weight: 700;
   text-transform: uppercase;
   font-size: .875em;
+  padding: 0;
 }
 a{
   text-decoration: none;
@@ -127,7 +128,7 @@ a{
 }
 h1{
   font-family: var(--font-family-alternate);
-  font-size: 2.5em;
+  font-size: 2.35em;
   font-weight: 500;
   line-height: 1.35em;
 }
@@ -149,12 +150,17 @@ p {
 font-size: .875em;
 line-height: 1.25em;
 }
-img {
 
+img {
+	width: 100%;
 }
 
-figure{
-font-size: .75em;
+figure {
+        margin: 0;
+        font-size: .75em;
+}
+figcaption {
+  line-height: 1.5em;
 }
 address{
   font-style: normal;
@@ -177,23 +183,67 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  max-width: 320px;
+  width: 100%;
+  padding: 0 30px;
 }
 /* - - - - - - - HEADER STYLES - - - - - - - - - */
-header {
-/*padding: 15px 0;*/
+
+header a{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header figure {
+  width: 65%;
+  margin-top: 15px;
+  max-width: 250px
 }
 
-header .content-wrapper{
-/*display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;*/
+header nav {
+  width: 60%;
+}
+header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header nav ul li {
+margin: 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header a {
+display: flex;
+flex-flow: row wrap;
+
+}
+
+/*header .content-wrapper{
 width: 100%;
 margin: 0;
 padding: 15px 0;
+}*//*
+header figure {
+    /*width: 60%;*//*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
-
 
 .header-divider{
  width: 60%;
@@ -213,7 +263,7 @@ header nav ul {
 }
 header nav ul li {
 
-}
+}*/
 
 
 /* - - - - - - - MAIN STYLES HOMEPAGE- - - - - - - - - */
@@ -225,12 +275,16 @@ main h1{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url("../img/woman-over-bridge.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #333;
+  min-height: 500px;
 }
 
 .hero-area .content-wrapper {
-  background-image: url("../img/woman-over-bridge.jpg");
-  background-size: cover;
-  min-height: 500px;
+
   width: 100%;
   padding: 20px;
 }
@@ -257,6 +311,7 @@ form{
 display: flex;
 flex-direction: column;
 align-items: flex-start;
+width: 100%;
 }
 
 aside .form {
@@ -268,11 +323,11 @@ input[type=text] {
   width: 100%;
   color: var(--color-text-almostWhite);
   font-style: italic;
+  height: 48px;
 }
 
 input[type=button] {
   width: 100%;
-  padding: 20px 0;
   margin-top: 20px;
   background-color: var(--color-bg-dark);
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -282,13 +337,18 @@ input[type=button] {
   border: none;
   text-align: center;
   text-transform: uppercase;
+  height: 48px;
 }
 .features{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   color: #fff;
-  background-color: #000;
+  background-image: url("../img/unsplash.jpg");
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .features .content-wrapper{
@@ -304,6 +364,9 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   width: 54%;
+  min-width: 138px;
+  margin: 30px 30px;
+  padding: 0 30px;
 }
 
 .feature-items figcaption {
@@ -548,16 +611,35 @@ h2{
 }
 /* =  =  =  =  =  HEADER  =  =  =  =  =  */
   header .content-wrapper {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     padding: 15px 56px;
   }
-  header nav {
-    width: 30%;
+  header figure {
+    width: 80%;
+    margin: 0;
   }
-  .header-divider{
+  header nav {
     width: 40%;
   }
+  header nav ul {
+ justify-content: flex-end;
+  }
+  .header-divider{
+    width: 0%;
+  }
   header a {
-    width: 30%;
+  width: 40%;
+  flex-direction: row;
+  }
+  header li {
+text-align: right; }
+  header li a {
+    width: 100%;
+    text-align: right;
+    margin-left: 34px;
   }
 /* =  =  =  =  =  MAIN  =  =  =  =  =  */
   .hero-area .content-wrapper {
@@ -579,6 +661,7 @@ h2{
   }
   .feature-items{
     width: 23%;
+    min-width: 200px;
   }
   .lacrue-section {
     width: 48%;
@@ -657,13 +740,14 @@ h2{
 
     .content-wrapper{
       max-width: 980px;
+      justify-content: flex-start;
     }
     /* + + + + + +  HEADER  + + + + + +   */
       header .content-wrapper {
         padding: 25px 70px;
       }
 
-    /* + + + + + + ++  MAIN  + + + + + + ++  */
+    /* + + + + + + + +  MAIN  + + + + + + ++  */
 
       aside .content-wrapper {
         width: 100%;
