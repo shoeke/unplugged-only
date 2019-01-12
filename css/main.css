@@ -365,6 +365,7 @@ input[type=button] {
   flex-flow: row wrap;
   width: 54%;
   min-width: 138px;
+  max-width: 300px;
   margin: 30px 30px;
   padding: 0 30px;
 }
@@ -385,7 +386,6 @@ input[type=button] {
 }
 .reviews .content-wrapper{
   padding: 30px;
-
 }
 
 .reviews img {
@@ -416,7 +416,6 @@ input[type=button] {
 }
 
 .mission .content-wrapper{
-padding: 30px 20px;
 }
 .map{
 
@@ -470,7 +469,8 @@ padding: 30px 20px;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 30px 20px;
+  padding: 30px 50px;
+  max-width: 450px;
 
 }
 /* - - - - - - - FOOTER STYLES - - - - - - - - - */
@@ -744,6 +744,7 @@ text-align: right; }
     padding: 30px 60px;
     justify-content: space-between;
     align-items: flex-start;
+    max-width: 668px;
   }
   .faq h2 {
     width: 100%;
@@ -832,6 +833,7 @@ text-align: right; }
 
       .faq .content-wrapper{
         padding: 40px 120px;
+          max-width: 1100px;
       }
       /* + + + + + +  FOOTER  + + + + + +  */
         footer .content-wrapper{
