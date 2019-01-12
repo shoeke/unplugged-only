@@ -511,6 +511,7 @@ align-items: center;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 270px;
 }
 .icon-holder {
   display: flex;
@@ -520,7 +521,6 @@ align-items: center;
   height: 50px;
   background-color: var(--color-bg-dark);
   border-radius: 50%;
-  margin: 0 5%;
 }
 
 .social-icons i {
@@ -760,10 +760,11 @@ text-align: right; }
     flex-flow: row wrap;
   }
   .contact, .social {
-    width: 45%;
+    width: 50%;
+    margin-top: 0;
   }
   .social-icons{
-    width: 50%;
+    width: 100%;
   }
 }
 
