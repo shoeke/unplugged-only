@@ -368,6 +368,10 @@ input[type=button] {
   margin: 30px 30px;
   padding: 0 30px;
 }
+.feature-items i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
 
 .feature-items figcaption {
   text-align: center;
