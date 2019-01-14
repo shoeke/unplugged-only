@@ -96,7 +96,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* - - - - - - - CSS VARIABLES - - - - - - - - - */
-/* testing out with bakkground colors*/
+/* testing out with background colors and font families*/
 :root {
   --color-bg-dark:#2a423a;
   --color-bg-light: #527158;
@@ -126,21 +126,24 @@ a{
   text-decoration: none;
   color: var(--color-text-almostWhite);
 }
-h1{
+h1, h2, h3, h4 {
   font-family: var(--font-family-alternate);
-  font-size: 2.35em;
   font-weight: 500;
+}
+h1{
+  font-size: 2.35em;
   line-height: 1.35em;
 }
 h2{
-  font-family: var(--font-family-alternate);
-  font-weight: 500;
   font-size: 1.8em;
   line-height: 1.15em;
-
 }
 h3,
 h4{
+  font-size: 1.1em;
+  margin-top: 0;
+}
+p .address-head{
   font-family: var(--font-family-alternate);
   font-weight: 500;
   font-size: 1.1em;
@@ -164,11 +167,8 @@ figcaption {
 }
 address{
   font-style: normal;
-
 }
-.content-wrapper{
 
-}
 /* - - - - - - - SHARED HEADER/FOOTER STYLES - - - - - - - - - */
 
 header,
@@ -216,56 +216,6 @@ margin: 0 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
-/*header a {
-display: flex;
-flex-flow: row wrap;
-
-}
-
-/*header .content-wrapper{
-width: 100%;
-margin: 0;
-padding: 15px 0;
-}*//*
-header figure {
-    /*width: 60%;*//*
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-.header-divider{
- width: 60%;
-}
-header nav{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: row wrap;
-width: 60%;
-}
-header nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-header nav ul li {
-
-}*/
-
-
 /* - - - - - - - MAIN STYLES HOMEPAGE- - - - - - - - - */
 
 main h1{
@@ -284,11 +234,9 @@ main h1{
 }
 
 .hero-area .content-wrapper {
-
   width: 100%;
   padding: 20px;
 }
-
 
 aside{
   display: flex;
@@ -301,10 +249,6 @@ aside .content-wrapper{
   display: flex;
   justify-content: flex-start;
   padding: 25px 20px 50px 20px;
-
-}
-.form-description{
-
 }
 
 form{
@@ -382,7 +326,6 @@ input[type=button] {
   justify-content: center;
   background-color: var(--color-bg-dark);
   color: #fff;
-  /*padding: 25px;*/
 }
 .reviews .content-wrapper{
   padding: 30px;
@@ -400,12 +343,6 @@ input[type=button] {
   margin: 20px 0;
 }
 
-.lacrue-section{
-
-}
-.lacrue-text{
-
-}
 /* - - - - - - - MAIN STYLES ABOUT PAGE-- - - - - - - - - */
 .mission{
   display: flex;
@@ -415,11 +352,6 @@ input[type=button] {
   background-color: var(--color-bg-light);
 }
 
-.mission .content-wrapper{
-}
-.map{
-
-}
 #map-hold {
   width: 100%;
   height: 0;
@@ -449,12 +381,7 @@ input[type=button] {
 .contact-content{
   width: 100%;
 }
-.gen-info{
 
-}
-.chat{
-
-}
 /* - - - - - - - MAIN STYLES FAQ PAGE-- - - - - - - - - */
 .faq{
   display: flex;
@@ -463,7 +390,6 @@ input[type=button] {
   flex-flow: row wrap;
   background-color: var(--color-bg-light);
 }
-/*not sure if it's .faq-content or faq content-wrapper*/
 .faq .content-wrapper{
   display: flex;
   justify-content: center;
@@ -471,12 +397,12 @@ input[type=button] {
   flex-flow: row wrap;
   padding: 30px 50px;
   max-width: 450px;
-
 }
+
 /* - - - - - - - FOOTER STYLES - - - - - - - - - */
+
 footer {
   color: #fff;
-
 }
 footer .content-wrapper{
  width: 60%;
@@ -533,12 +459,6 @@ align-items: center;
   text-align: center;
   margin-bottom: 15px;
 }
-
-
-
-
-
-
 
 
 /* ==========================================================================
@@ -628,7 +548,7 @@ align-items: center;
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-    /* Tablets */
+    /* = = = = = = = Tablets  = = = = = = = = =*/
 
 html {
   font-size: 18px;
@@ -687,7 +607,6 @@ text-align: right; }
     width: 38%;
   }
   .features .content-wrapper{
-    padding: ;
     justify-content: space-around;
   }
   .feature-items{
@@ -723,7 +642,6 @@ text-align: right; }
   .mission-content p {
     width: 45%;
   }
-
   .contact-section .content-wrapper{
     padding: 30px 60px;
   }
