@@ -143,15 +143,10 @@ h4{
   font-size: 1.1em;
   margin-top: 0;
 }
-p .address-head{
-  font-family: var(--font-family-alternate);
-  font-weight: 500;
-  font-size: 1.1em;
-  margin-top: 0;
-}
+
 p {
 font-size: .875em;
-line-height: 1.25em;
+line-height: 1.75em;
 }
 
 img {
@@ -184,7 +179,7 @@ footer {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 25px;
 }
 /* - - - - - - - HEADER STYLES - - - - - - - - - */
 
@@ -234,8 +229,9 @@ main h1{
 }
 
 .hero-area .content-wrapper {
+/*
   width: 100%;
-  padding: 20px;
+  padding: 20px;*/
 }
 
 aside{
@@ -248,7 +244,9 @@ aside{
 aside .content-wrapper{
   display: flex;
   justify-content: flex-start;
-  padding: 25px 20px 50px 20px;
+/*  padding: 25px 20px 50px 20px;*/
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
 
 form{
@@ -328,7 +326,7 @@ input[type=button] {
   color: #fff;
 }
 .reviews .content-wrapper{
-  padding: 30px;
+/*  padding: 30px;*/
 }
 
 .reviews img {
@@ -376,7 +374,9 @@ input[type=button] {
   background-color: var(--color-bg-dark);
 }
 .contact-section .content-wrapper {
-  padding: 30px 20px;
+/*  padding: 30px 20px;*/
+padding-top: 30px;
+padding-bottom: 30px;
 }
 .contact-content{
   width: 100%;
@@ -397,6 +397,11 @@ input[type=button] {
   flex-flow: row wrap;
   padding: 30px 50px;
   max-width: 450px;
+}
+.faq-content h4 {
+  line-height: 1.45em;
+  margin-top: 1.5em;
+  margin-bottom: .75em;
 }
 
 /* - - - - - - - FOOTER STYLES - - - - - - - - - */
