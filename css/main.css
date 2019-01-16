@@ -377,6 +377,7 @@ input[type=button] {
 /*  padding: 30px 20px;*/
 padding-top: 30px;
 padding-bottom: 30px;
+max-width: 380px;
 }
 .contact-content{
   width: 100%;
@@ -559,6 +560,8 @@ html {
   font-size: 18px;
 }
 .content-wrapper {
+  width: 100%;
+  padding: 0 60px;
   max-width: 680px;
 }
 h2{
@@ -570,8 +573,10 @@ h2{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 15px 56px;
+  /*  width: 100%;
+    padding: 15px 56px;*/
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   header figure {
     width: 80%;
@@ -599,10 +604,11 @@ text-align: right; }
   }
 /* =  =  =  =  =  MAIN  =  =  =  =  =  */
   .hero-area .content-wrapper {
-    padding: 60px;
+  /*  padding: 60px;*/
   }
   aside .content-wrapper {
-    padding:50px ;
+    padding-top:50px ;
+    padding-bottom: 50px;
     justify-content: space-around;
   }
   aside .form {
@@ -623,7 +629,8 @@ text-align: right; }
     margin-right: 20px;
   }
   .reviews .content-wrapper {
-    padding: 40px 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     justify-content: flex-start;
   }
   .reviews article {
@@ -637,7 +644,8 @@ text-align: right; }
 }
 /* =  =  =  =  =  ABOUT PAGE  =  =  =  =  =  */
   .mission .content-wrapper{
-    padding: 30px 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .mission-content{
     display: flex;
@@ -648,23 +656,25 @@ text-align: right; }
     width: 45%;
   }
   .contact-section .content-wrapper{
-    padding: 30px 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .contact-section .contact-content{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 0;
+    justify-content: space-around;
   }
-  .contact-section .content-wrapper h2{
-    width: 100%;
+  .contact-section .content-wrapper {
+    width: 90%;
+    max-width: 660px;
   }
   .gen-info, .chat {
     width: 45%;
   }
 /* =  =  =  =  =  FAQ PAGE  =  =  =  =  =  */
   .faq .content-wrapper{
-    padding: 30px 60px;
+    padding-top: 30px
+    padding-bottom: 30px;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 668px;
@@ -678,7 +688,7 @@ text-align: right; }
 
 /* =  =  =  =  =  FOOTER  =  =  =  =  =  */
   footer .content-wrapper{
-    width: 100%;
+    /*width: 100%;*/
   }
   .footer-content{
     flex-flow: row wrap;
