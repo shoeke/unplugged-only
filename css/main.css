@@ -244,7 +244,6 @@ aside{
 aside .content-wrapper{
   display: flex;
   justify-content: flex-start;
-/*  padding: 25px 20px 50px 20px;*/
   padding-top: 25px;
   padding-bottom: 50px;
 }
@@ -325,10 +324,6 @@ input[type=button] {
   background-color: var(--color-bg-dark);
   color: #fff;
 }
-.reviews .content-wrapper{
-/*  padding: 30px;*/
-}
-
 .reviews img {
   max-width: 100%;
   height: auto;
@@ -603,9 +598,7 @@ text-align: right; }
     margin-left: 34px;
   }
 /* =  =  =  =  =  MAIN  =  =  =  =  =  */
-  .hero-area .content-wrapper {
-  /*  padding: 60px;*/
-  }
+
   aside .content-wrapper {
     padding-top:50px ;
     padding-bottom: 50px;
